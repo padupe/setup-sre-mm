@@ -1,10 +1,23 @@
 # Setup SRE-MM
+> Check the Documentation in pt-br by clicking 🇧🇷 [here](https://github.com/padupe/setup-sre-mm/blob/main/docs/README-pt-br.md 'here').
+
+## Description
+Installation of the main tools used by the SRE team:
+- [DBeaver](https://dbeaver.io/)
+- [decK](https://docs.konghq.com/deck/)
+    - *decK helps to manage [Kong](https://konghq.com/) configuration declaratively*
+- [Discord](https://discord.com/)
+- [Docker](https://www.docker.com/)
+- [Node.js](https://nodejs.org/en/)
+    - *using [nvm](https://github.com/nvm-sh/nvm) package*
+- [Postman](https://www.postman.com/)
+- [Python](https://www.python.org/)
 
 ## Business Context
 Carry out the necessary installations in the environment of new employees of the MadeiraMadeira SRE team.
 
 ## Requirements
-- SO Linux/Ubunt;
+- OS Linux/Ubunt;
 - Root User;
 
 ## Step by Step
