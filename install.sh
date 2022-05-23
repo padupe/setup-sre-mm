@@ -21,6 +21,8 @@ Postman()
     echo 'Install Postman...'
     sudo apt-get update
     sudo snap install postman
+    echo 'Success installing the Postman'
+    echo
 }
 ################################################################################
 # DBeaver                                                                      #
@@ -32,6 +34,8 @@ DBeaver()
     sudo sh -c 'wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb'
     sudo dpkg -i dbeaver-ce_6.0.0_amd64.deb
     sudo apt-get install -f
+    echo 'Success installing the DBeaver'
+    echo
 }
 ################################################################################
 # Nodejs                                                                       #
@@ -43,6 +47,8 @@ Nodejs()
     curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.profile 
     nvm install node
+    echo 'Success installing the Node.js'
+    echo
 }
 ################################################################################
 # Python                                                                       #
@@ -53,6 +59,8 @@ Python()
     sudo apt-get update
     sudo apt install software-properties-common
     sudo apt install python3.8
+    echo 'Success installing the Python'
+    echo
 }
 ################################################################################
 # Discord                                                                      #
@@ -64,6 +72,8 @@ Discord()
     sudo apt install gdebi-core wget
     sudo sh -c 'wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"'
     sudo gdebi ~/discord.deb
+    echo 'Success installing the Discord'
+    echo
 }
 ################################################################################
 # Deck                                                                         #
@@ -75,11 +85,16 @@ Deck()
     curl -sL https://github.com/kong/deck/releases/download/v1.12.1/deck_1.12.1_linux_amd64.tar.gz -o deck.tar.gz
     tar -xf deck.tar.gz -C /tmp
     sudo cp /tmp/deck /usr/local/bin/
-
+    echo 'Success installing the decK'
+    echo
 }
+################################################################################
+# Docker                                                                       #
+################################################################################
 Docker()
 {
-    echo 'Install Docker...'
+    echo 'Install Docker and docker-compose...'
+    echo
     echo 'Docker | Phase 1'
     # Phase 1
     sudo ap-get update
@@ -102,10 +117,13 @@ Docker()
     sudo systemctl status docker
 
     # to run Docker without the need for 'sudo'
-    echo 'Digite seu username: '
+    echo 'Enter your username: '
     read username
     sudo usermod -aG docker $username
     su - $username
+
+    echo 'Success installing the Docker and docker-compose'
+    echo
 }
 ################################################################################
 # Requirements                                                                 #
@@ -117,6 +135,7 @@ PreInstall()
     echo 'Update and Upgrade System'
     sudo apt update && sudo apt upgrade
     sudo apt install curl
+    echo
 }
 ################################################################################
 # Process the input options. Add options as needed.                            #
