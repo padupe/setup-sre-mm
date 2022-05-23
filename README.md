@@ -1,5 +1,5 @@
 # Setup SRE-MM
-> Check the Documentation in pt-br by clicking 🇧🇷 [here](https://github.com/padupe/setup-sre-mm/blob/main/docs/README-pt-br.md 'here').
+> Check the Documentation in pt-br by clicking 🇧🇷 [here](https://github.com/padupe/steup-sre-mm/blob/main/docs/README-pt-br.md 'here').
 
 ## Description
 Installation of the main tools used by the SRE team:
