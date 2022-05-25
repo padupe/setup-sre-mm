@@ -3,6 +3,7 @@
 
 ## Description
 Installation of the main tools used by the SRE team:
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 - [DBeaver](https://dbeaver.io/)
 - [decK](https://docs.konghq.com/deck/)
     - *decK helps to manage [Kong](https://konghq.com/) configuration declaratively*
@@ -12,6 +13,7 @@ Installation of the main tools used by the SRE team:
     - *using [nvm](https://github.com/nvm-sh/nvm) package*
 - [Postman](https://www.postman.com/)
 - [Python](https://www.python.org/)
+- [Serverless CLI](https://www.serverless.com/framework/docs/providers/aws/cli-reference)
 
 ## Business Context
 Carry out the necessary installations in the environment of new employees of the MadeiraMadeira SRE team.
