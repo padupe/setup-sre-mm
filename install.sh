@@ -6,7 +6,7 @@
 Help()
 {
    # Display Help
-   echo "Install DBeaver, decK, Discord, Docker, Node.js, Postman and Python3.8 and set it to your system."
+   echo "Install AWS CLI, DBeaver, decK, Discord, Docker, Node.js, Postman, Python3.8, Serverless CLI and set it to your system."
    echo
    echo "Usage: ./install.sh [-h]"
    echo "options:"
@@ -89,6 +89,32 @@ Deck()
     echo
 }
 ################################################################################
+# CLI Serverless                                                               #
+################################################################################
+Serverless()
+{
+    echo 'Install Serverless CLI ...'
+    sudo apt-get update
+    npm install -g serverless
+    serverless -v
+    echo 'Success installing the Serverless CLI'
+    echo
+}
+################################################################################
+# CLI AWS                                                                      #
+################################################################################
+AWS()
+{
+    echo 'Install AWS CLI...'
+    sudo apt-get update
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    unzip awscliv2.zip
+    sudo ./aws/install
+    aws --version
+    echo 'Success installing the AWS CLI'
+    echo
+}
+################################################################################
 # Docker                                                                       #
 ################################################################################
 Docker()
@@ -155,6 +181,8 @@ done
 # Program                                                                      #
 ################################################################################
 PreInstall
+AWS
+Serverless
 Postman
 DBeaver
 Nodejs
